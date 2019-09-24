@@ -19,5 +19,9 @@ body
 footer p{
     width:15%;
     margin-top: 0.5%;
-    margin-left: 4%;
+    margin-left: 7%;
+}
+
+footer h4{
+    color: white;
 }
