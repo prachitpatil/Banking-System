@@ -1,0 +1,23 @@
+body
+{
+    background: url('https://images.wallpaperscraft.com/image/bank_candle_hand_124077_1920x1080.jpg') no-repeat;
+    background-sze: cover;
+    font-family: Arial;
+    color:cornflowerblue
+}
+
+.jumbotron
+{
+    background: none;
+}
+
+.dropdown-item:hover
+{
+    background-color: lightgray;
+}
+
+footer p{
+    width:15%;
+    margin-top: 0.5%;
+    margin-left: 4%;
+}
