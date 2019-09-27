@@ -18,7 +18,8 @@
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        
+    
+      <!--Navbar-->  
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="#" style="font-size: 180%">Home</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -73,85 +74,72 @@
       </form>
     </div>
   </nav>
-        
+    
+  <!--Jumbotron-->
   <div class="jumbotron" style="background: none;">
     <h1 class="display-4" style="color: white; width: 60%">150 Years of Banking</h1>
-    <p class="lead" style="width: 40%">A bank with family values! The Robinson family has
+    <p class="lead" style="width: 45%">A bank with family values! The Robinson family has
     been at the helm of NVB since five years after the doors opened in 1868.
     </p>
     <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
     <br>
     <br>
+    
     <h3 style="color: white; text-align: right">Named #1 Best-in-State</h3>
     <p style="color: white; text-align: right">-July 2018</p>
     <h3 style="color: white; text-align: right">Celebrating 150 Years of Success</h3>
     <p style="color: white; text-align: right">-Nov 2018</p>
   </div> 
 
-<!---->
-<div class="login-reg-panel">
-		<div class="login-info-box">
-			<h2>Have an account?</h2>
-			<p>Lorem ipsum dolor sit amet</p>
-			<label id="label-register" for="log-reg-show">Login</label>
-			<input type="radio" name="active-log-panel" id="log-reg-show"  checked="checked">
-		</div>
-							
-		<div class="register-info-box">
-			<h2>Don't have an account?</h2>
-			<p>Lorem ipsum dolor sit amet</p>
-			<label id="label-login" for="log-login-show">Register</label>
-			<input type="radio" name="active-log-panel" id="log-login-show">
-		</div>
-							
-		<div class="white-panel">
-			<div class="login-show">
-				<h2>LOGIN</h2>
-				<input type="text" placeholder="Email">
-				<input type="password" placeholder="Password">
-				<input type="button" value="Login">
-				<a href="">Forgot password?</a>
-			</div>
-			<div class="register-show">
-				<h2>REGISTER</h2>
-				<input type="text" placeholder="Email">
-				<input type="password" placeholder="Password">
-				<input type="password" placeholder="Confirm Password">
-				<input type="button" value="Register">
-			</div><div class="login-reg-panel">
-		<div class="login-info-box">
-			<h2>Have an account?</h2>
-			<p>Lorem ipsum dolor sit amet</p>
-			<label id="label-register" for="log-reg-show">Login</label>
-			<input type="radio" name="active-log-panel" id="log-reg-show"  checked="checked">
-		</div>
-							
-		<div class="register-info-box">
-			<h2>Don't have an account?</h2>
-			<p>Lorem ipsum dolor sit amet</p>
-			<label id="label-login" for="log-login-show">Register</label>
-			<input type="radio" name="active-log-panel" id="log-login-show">
-		</div>
-							
-		<div class="white-panel">
-			<div class="login-show">
-				<h2>LOGIN</h2>
-				<input type="text" placeholder="Email">
-				<input type="password" placeholder="Password">
-				<input type="button" value="Login">
-				<a href="">Forgot password?</a>
-			</div>
-			<div class="register-show">
-				<h2>REGISTER</h2>
-				<input type="text" placeholder="Email">
-				<input type="password" placeholder="Password">
-				<input type="password" placeholder="Confirm Password">
-				<input type="button" value="Register">
-			</div>
-		</div>
-	</div>
-<!---->
+<!--Cards(Services)-->
 
+<div class="container" id="Services"> 
+
+  <div class="row">
+
+      <div class="col-md-4">  
+          <div class="card" style="margin: auto">
+            <img src="img/account.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-title">My Account</h4>
+              <p class="card-text">Take a look into your account.</p>
+              <a href="#" class="btn btn-primary">Login</a>
+              <a href="#" style="text-align:right">Need Help?</a>
+            </div>
+          </div>
+          <div class="col-xs"><br></div>
+        </div>
+
+      <div class="col-md-4">  
+  <div class="card" style="margin: auto">
+    <img src="img/map.jpg" class="card-img-top" style="box-sizing: content-box" alt="...">
+    <div class="card-body">
+      <h4 class="card-title">ATM Finder</h4>
+      <p class="card-text">Don't ever run out of cash.</p>
+      <a href="#" class="btn btn-primary">Find ATM</a>
+    </div>
+  </div>
+  <div class="col-xs"><br></div>
+</div>
+
+
+  <div class="col-md-4">  
+  <div class="card" style="margin: auto">
+    <img src="img/chatbot.jpg" class="card-img-top img-fluid" alt="...">
+    <div class="card-body">
+      <h4 class="card-title">Need Help?</h4>
+      <p class="card-text">Let our Friendly ChatBot help you.</p>
+      <a href="#" class="btn btn-primary">Chat</a>
+    </div>
+  </div>
+  <div class="col-xs"><br></div>
+</div>
+
+</div>
+</div>
+
+
+<!--Carousel-->
   <div class="bd-example">
     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
@@ -161,6 +149,7 @@
         <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
       </ol>
       <div class="carousel-inner">
+      
         <div class="carousel-item active">
           <img src="img/calc.jpg" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
@@ -203,12 +192,13 @@
 
 <br>
 
+<!--Cards(About)-->
  <div class="container" id="About"> 
     <div class="row">
         <div class="col-md-4">  
   
     <div class="card" style="margin: auto">
-      <img src="https://www.lifewire.com/thmb/vBuCmLi2h_2Omf_mHo0-M-2Z13I=/768x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/mapsdirectionspart1-56cd4d395f9b5879cc5bd51a.png" class="card-img-top" style="box-sizing: content-box" alt="...">
+      <img src="img/maps.JPG" class="card-img-top" style="box-sizing: content-box" alt="...">
       <div class="card-body">
         <h4 class="card-title">Location</h4>
         <p class="card-text">We always like to stay in your vicinity.</p>
@@ -221,7 +211,7 @@
 
     <div class="col-md-4">  
     <div class="card" style="margin: auto">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Danske_Bank_Copenhagen_2018.jpg/1024px-Danske_Bank_Copenhagen_2018.jpg" class="card-img-top img-fluid" alt="...">
+      <img src="img/history.jpg" class="card-img-top img-fluid" alt="...">
       <div class="card-body">
         <h4 class="card-title">History</h4>
         <p class="card-text">We are here since 1868 to help you.</p>
@@ -233,7 +223,7 @@
 
         <div class="col-md-4">  
     <div class="card" style="margin: auto">
-      <img src="https://www.britishsoftware.co/wp-content/uploads/2016/03/team-icon.png" class="card-img-top" alt="...">
+      <img src="img/team.jpg" class="card-img-top" alt="...">
       <div class="card-body">
         <h4 class="card-title">Our Team</h4>
         <p class="card-text">We have an amazing team to serve you.</p>
@@ -245,13 +235,12 @@
   </div>
 </div>
 
-       
+  <!--Footer-->    
   <footer  class="navbar navbar-expand-lg navbar-dark bg-dark" id="Contact">
-        <div><h4>Contact Us At:</h4></div>
-        <p>(+91) 1234567890</p>
-        <p>(+91) 1234567890</p>
-        <p>support@bank.com</p>
-        <p>bank@email.com</p>
+        <div class="col-md-3"><h4>Contact Us At:</h4></div>
+        <div class="col-md-3"><p>(+91) 1234567890</p></div>
+        <div class="col-md-3"><p>(+91) 1234567890</p></div>
+        <div class="col-md-3"><p>support@bank.com</p></div>
   </footer>    
         
   </body>
