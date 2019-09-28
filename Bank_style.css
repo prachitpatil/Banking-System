@@ -1,7 +1,6 @@
 body
 {
     background: url('img/bg.jpg') no-repeat;
-    background-sze: cover;
     font-family: Arial;
     color:cornflowerblue
 }
@@ -19,3 +18,4 @@ footer h4{
     height: 300px;
     padding: 0% 2% 0% 2%;
 }
+
