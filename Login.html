@@ -20,7 +20,62 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
       
-      <h3 style="padding: 2%;">Click the Button below to Enter Login credentials and Log into Your Account Securely.</h3>
+      <!--Navbar-->  
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#" style="font-size: 180%">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Personal
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+              <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Business
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Accounts</a>
+                <a class="dropdown-item" href="#">Tools</a>
+                <a class="dropdown-item" href="#">Online</a>
+              </div>
+            </li>
+              <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Invest
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Business Services</a>
+                <a class="dropdown-item" href="#">Banking Services</a>
+                <a class="dropdown-item" href="#">Business Centres</a>
+              </div>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#Services">Services</a>
+              </li>
+              <li class="nav-item active">
+              <a class="nav-link" href="#About">About</a>
+            </li>
+              
+              <li class="nav-item active">
+              <a class="nav-link" href="#Contact">Contact Us</a>
+            </li>
+          </ul>
+        
+        </div>
+      </nav>
+
+      <h3 style="padding: 2%; color:white;">Click the Button below to Enter Login credentials and Log into Your Account Securely.</h3>
 
     <!-- Button to open the modal login form -->
 <button onclick="document.getElementById('id01').style.display='block'" style="margin: 0% 40% 0% 38%;">Login</button>
@@ -56,6 +111,14 @@ class="close" title="Close Modal">&times;</span>
   </form>
 </div>
 
-    </body>
+    <!--Footer-->    
+  <footer  class="navbar navbar-expand-lg navbar-dark bg-dark" id="Contact">
+    <div class="col-md-3"><h4>Contact Us At:</h4></div>
+    <div class="col-md-3"><p>(+91) 1234567890</p></div>
+    <div class="col-md-3"><p>(+91) 1234567890</p></div>
+    <div class="col-md-3"><p>support@bank.com</p></div>
+</footer>  
+
+  </body>
 
 </html>

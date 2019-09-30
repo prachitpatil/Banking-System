@@ -1,3 +1,23 @@
+body
+{
+    background: url('img/bg.jpg') no-repeat;
+    font-family: Arial;
+    color:cornflowerblue
+}
+
+.dropdown-item:hover
+{
+    background-color: lightgray;
+}
+
+footer{
+  margin-top: 60%;
+}
+
+footer h4{
+    color: white;
+}
+
 
 /* Bordered form */
 form {
