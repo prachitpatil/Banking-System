@@ -10,13 +10,11 @@ body
     background-color: lightgray;
 }
 
-.carousel-item img{
-    height: 300px;
-    padding: 0% 2% 0% 2%;
-}
-
 /*Footer*/
 
+#Contact{
+    margin-top: 60%;
+}
 footer h4{
     color: white;
     padding: 1% 1% 1% 1%;
@@ -57,3 +55,4 @@ footer h4{
   }
 
   /*Footer-End*/
+
