@@ -31,11 +31,12 @@
       table {
         font-size: 12px;
       }
+      /*
       .atm-search {
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
-        background:white;
+        background:rgba(158, 158, 158, 0);
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -45,31 +46,37 @@
         width: 440px;
         z-index: 1;
       }
+      */
       
       #map {
         margin-top: 40px;
-        width:50%;
+        margin-bottom: 5%;
+        margin-right: 2%;
+        margin-left: 2%;
+        width: 75%;
+        height: 85%;
       }
       #listing {
         position: absolute;
-        width: 200px;
-        height: 470px;
+        width: 21%;
+        height: 85%;
         overflow: auto;
-        left: 442px;
-        top: 0px;
+        left: 77%;
+        top: 187px;
         cursor: pointer;
         overflow-x: hidden;
         float:right;
       }
       #findatm {
-        font-size: 30px;
+        font-size: 200%;
+        margin: 1% 1% 1% 5%;
+        background-color: rgba(255,255,255,0);
       }
-      /* #locationField {
-        -webkit-box-flex: 1 1 190px;
-        -ms-flex: 1 1 190px;
-        flex: 1 1 190px;
-        margin: 0 8px;
-      } */
+       
+       #locationField {
+        width: 20%;
+      }
+       
       #autocomplete {
         width: 100%;
       }
@@ -105,7 +112,7 @@
 
   <body>
 
-    <link href='Locator_style.css' rel='stylesheet'>
+    <link href='ATM_style.css' rel='stylesheet'>
       <!-- Optional JavaScript -->
       <!-- jQuery first, then Popper.js, then Bootstrap JS -->
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -114,16 +121,75 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
+    <!--Navbar--> 
+     
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+        <a class="navbar-brand" href="Bank.html" style="font-size: 180%">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Personal
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+              <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Business
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Accounts</a>
+                <a class="dropdown-item" href="#">Tools</a>
+                <a class="dropdown-item" href="#">Online</a>
+              </div>
+            </li>
+              <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Invest
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Business Services</a>
+                <a class="dropdown-item" href="#">Banking Services</a>
+                <a class="dropdown-item" href="#">Business Centres</a>
+              </div>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#Services">Services</a>
+              </li>
+              <li class="nav-item active">
+              <a class="nav-link" href="#About">About</a>
+            </li>
+              
+              <li class="nav-item active">
+              <a class="nav-link" href="#Contact">Contact Us</a>
+            </li>
+          </ul>
+        
+          <form class="form-inline my-2 my-lg-0">
+            <a href="Login.html" class="btn btn-outline-danger my-2 my-sm-0" type="submit">Logout</a>
+          </form>
+        </div>
+      </nav>
+      
+    <br/>
+      
     <div class="atm-search">
-      <div id="findatm">
+      <span id="findatm">
         <b>Find Atms:<b>
-        <br>
-      </div>
 
-      <div id="locationField">
-        <input id="autocomplete" placeholder="Search here" type="text" />
-      </div>
+        <input id="autocomplete" placeholder="Search here" type="text" style="width: 30%;"/>
+      </span>
     </div>
+    
 
     <div id="map"></div>
 
@@ -444,5 +510,32 @@
     </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdv0MrvM9qaY-quLMaFSYxV7_Z0Xp1qH4&libraries=places&callback=initMap"
 async defer></script>
+
+
+    
+<!--Footer-->   
+
+<footer  class="container-fluid footer" id="Contact">
+    <span class="col-md-3" ><h4>Contact Us:</h4></span>
+    <br>
+    <span class="col-md-3" style="color: gray;">General Enquiries:</span>
+    <span class="col-md-3">(+91) 1234567890</span>
+    <span class="col-md-3">(+91) 1234567890</span>
+    <br>
+    <br>
+    <span class="col-md-3" style="color: gray;">Or email us at:</span>
+    <span class="col-md-3">support@bank.com</span>
+    <span class="col-md-3">help@bank.com</span>
+    <br>
+    <br>
+    <span class="col-md-3" style="color: gray;">Find us on:</span>
+    <a href="https://www.facebook.com/login/" class="fa fa-facebook"></a>
+    <a href="https://twitter.com/login?lang=en" class="fa fa-twitter"></a>
+    <br>
+    <br>
+</footer>    
+
+
+
   </body>
 </html>
