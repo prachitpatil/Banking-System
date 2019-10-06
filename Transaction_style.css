@@ -1,6 +1,6 @@
 body
 {
-    background: url('img/bg.jpg') repeat;
+    background: url('img/bg.jpg') no-repeat;
     font-family: Arial;
     color:cornflowerblue
 }
@@ -10,10 +10,6 @@ body
     background-color: lightgray;
 }
 
-.carousel-item img{
-    height: 300px;
-    padding: 0% 2% 0% 2%;
-}
 
 /*Footer*/
 
@@ -24,6 +20,8 @@ footer h4{
 
 #Contact{
     background-color: rgb(40, 44, 58);
+	    margin-top: 10%;
+
 }
   
   @media screen and (min-width: 720px) {
