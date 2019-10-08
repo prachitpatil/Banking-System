@@ -12,7 +12,7 @@
       <title>Bank</title>
     </head>
     <body>
-      <link href='Transaction_style.css' rel='stylesheet'>
+      <link href='EMI_style.css' rel='stylesheet'>
       <!-- Optional JavaScript -->
       <!-- jQuery first, then Popper.js, then Bootstrap JS -->
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -81,53 +81,100 @@
   </nav>
 
 
+
+<!--Cards-->
+
+<div class="container-fluid" style="background-color: rgb(38, 50, 66);"> 
+        <br>
+        <div class="container" style="background-color: rgb(38, 50, 66);"> 
+        <div class="container" id="Services"> 
+        
+          <div class="row">
+        
+              <div class="col-md-4">  
+                <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+                  <div class="card-header" style="text-align: center;">This Month:</div>
+                  <div class="card-body">
+                    <h5 class="card-title" style="text-align: center;">1234</h5>
+                  </div>
+                </div>
+                  <div class="col-xs"><br></div>
+                </div>
+        
+                <div class="col-md-4">  
+                  <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+                    <div class="card-header" style="text-align: center;">Next Month:</div>
+                    <div class="card-body">
+                      <h5 class="card-title" style="text-align: center;">5000</h5>
+                    </div>
+                  </div>
+                <div class="col-xs"><br></div>
+              </div>
+        
+              <div class="col-md-4">  
+                <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+                  <div class="card-header" style="text-align: center;">Total:</div>
+                  <div class="card-body">
+                    <h5 class="card-title" style="text-align: center;">12345678</h5>
+                  </div>
+                </div>
+                <div class="col-xs"><br></div>
+              </div>
+              
+        </div>
+        </div>
+        </div>
+        </div>
+
+<br/>
 <br/>
 
 <!--Transaction Table-->
 <div class="container-fluid" style="background-color: white;;">
-	<table class="table table-bordered table-hover table-responsive-xs">
-	  <thead class="thead-dark">
-	    <tr>
-        <th scope="col">#</th>
-        <th scope="col">Amount</th>
-	      <th scope="col">Type</th>
-        <th scope="col">Mode</th>
-        <th scope="col">Date</th>
-	      <th scope="col">Time</th>
-	    </tr>
-	  </thead>
-	  <tbody>
-	    <tr>
-	      <th scope="row">1</th>
-	      <td>5000</td>
-	      <td>Deposit</td>
-        <td>Cash</td>
-        <td>06-10-2019</td>
-        <td>01:00 PM</td>
-	    </tr>
-	    <tr>
-	      <th scope="row">1</th>
-	      <td>1234</td>
-	      <td>Withdrawal</td>
-        <td>Debit Card</td>
-        <td>05-10-2019</td>
-        <td>04:00 PM</td>
-	    </tr>
-	    <tr>
-	      <th scope="row">1</th>
-	      <td>65575</td>
-	      <td>Withdrawal</td>
-        <td>Challan</td>
-        <td>06-10-2019</td>
-        <td>11:00 AM</td>
-	    </tr>
-	  </tbody>
-	</table>
-</div>
+        <table class="table table-bordered table-hover table-responsive-xs">
+          <thead class="thead-dark">
+            <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+              <th scope="col">Type</th>
+            <th scope="col">EMI</th>
+            <th scope="col">Total</th>
+              <th scope="col">Ends On</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Car Loan</td>
+              <td>Loan</td>
+            <td>5000</td>
+            <td>1234567</td>
+            <td>06-10-2019</td>
+            </tr>
+            <tr>
+                <th scope="row">1</th>
+                <td>Home Loan</td>
+                <td>Loan</td>
+                <td>50000</td>
+                <td>12345678</td>
+                <td>06-10-2019</td>
+            </tr>
+            <tr>
+              <th scope="row">1</th>
+              <td>Education Loan</td>
+              <td>Loan</td>
+                <td>5000</td>
+                <td>1234567</td>
+                <td>06-10-2019</td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+ 
 
 
- <!--Footer-->    
-  <footer  class="container-fluid footer" id="Contact">
+<!--Footer-->    
+<footer  class="container-fluid footer" id="Contact">
         <span class="col-md-3" ><h4>Contact Us:</h4></span>
         <br>
         <span class="col-md-3" style="color: gray;">General Enquiries:</span>

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>My Cards</title>
+  </head>
+  <body>
+    <link href='Card_style.css' rel='stylesheet'>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+    <!--Navbar--> 
+  <header> 
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+  <a class="navbar-brand" href="#" style="font-size: 180%">Home</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Personal
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Business
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Accounts</a>
+          <a class="dropdown-item" href="#">Tools</a>
+          <a class="dropdown-item" href="#">Online</a>
+        </div>
+      </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Invest
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Business Services</a>
+          <a class="dropdown-item" href="#">Banking Services</a>
+          <a class="dropdown-item" href="#">Business Centres</a>
+        </div>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#Services">Services</a>
+        </li>
+        <li class="nav-item active">
+        <a class="nav-link" href="#About">About</a>
+      </li>
+        
+        <li class="nav-item active">
+        <a class="nav-link" href="#Contact">Contact Us</a>
+      </li>
+    </ul>
+  
+    <form class="form-inline my-2 my-lg-0">
+      <a href="#" class="btn btn-outline-danger my-2 my-sm-0" type="submit">Logout</a>
+    </form>
+  </div>
+</nav>
+  </header>
+
+
+<br/>
+
+<!--Seletion Buttons-->
+
+<div style="padding: 0% 0% 0% 1%;" class="btn-group">
+        <h5 style="margin-top: 2%;">Select Account :</h5>
+        <p style="color: rgba(0,0,0,0);">.</p>
+    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Account
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Account 1</a>
+      <a class="dropdown-item" href="#">Account 2</a>
+    </div>
+  </div>
+
+  <br/>
+  <br/>
+
+
+  <div style="padding: 0% 0% 0% 1%;"  class="btn-group">
+        <h5 style="margin-top: 2%;">Select Card :</h5>
+        <p style="color: rgba(0,0,0,0);">........</p>
+        <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Card
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#" id="cardbtn1" onclick="showCard1()">Card 1</a>
+          <a class="dropdown-item" href="#" id="cardbtn2" onclick="showCard2()">Card 2</a>
+        </div>
+      </div>
+
+
+      <br/>
+
+    <img id="Card1" src="img/card4.png" style="width: 30%;height:20%; padding: 2%; display: none;">
+    <img id="Card2" src="img/card2.png" style="width: 30%;height:20%; padding: 2%; display: none;">
+
+    <br/>
+
+<!--Transaction Table-->
+
+<div id="Table1" class="container-fluid" style="background-color: white; display: none;">
+        <table class="table table-bordered table-hover table-responsive-xs">
+          <thead class="thead-dark">
+            <tr>
+            <th scope="col">#</th>
+            <th scope="col">Amount</th>
+              <th scope="col">Type</th>
+            <th scope="col">Mode</th>
+            <th scope="col">Date</th>
+              <th scope="col">Time</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>5000</td>
+              <td>Deposit</td>
+            <td>Cash</td>
+            <td>06-10-2019</td>
+            <td>01:00 PM</td>
+            </tr>
+            <tr>
+              <th scope="row">1</th>
+              <td>1234</td>
+              <td>Withdrawal</td>
+            <td>Debit Card</td>
+            <td>05-10-2019</td>
+            <td>04:00 PM</td>
+            </tr>
+            <tr>
+              <th scope="row">1</th>
+              <td>65575</td>
+              <td>Withdrawal</td>
+            <td>Challan</td>
+            <td>06-10-2019</td>
+            <td>11:00 AM</td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+
+
+    <div id="Table2" class="container-fluid" style="background-color: white; display: none;">
+        <table class="table table-bordered table-hover table-responsive-xs">
+          <thead class="thead-dark">
+            <tr>
+            <th scope="col">#</th>
+            <th scope="col">Amount</th>
+              <th scope="col">Type</th>
+            <th scope="col">Mode</th>
+            <th scope="col">Date</th>
+              <th scope="col">Time</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>50000</td>
+              <td>Deposit</td>
+            <td>Cash</td>
+            <td>06-10-2019</td>
+            <td>01:00 PM</td>
+            </tr>
+            <tr>
+              <th scope="row">1</th>
+              <td>12340</td>
+              <td>Withdrawal</td>
+            <td>Debit Card</td>
+            <td>05-10-2019</td>
+            <td>04:00 PM</td>
+            </tr>
+            <tr>
+              <th scope="row">1</th>
+              <td>655750</td>
+              <td>Withdrawal</td>
+            <td>Challan</td>
+            <td>06-10-2019</td>
+            <td>11:00 AM</td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+
+  <!--Footer-->    
+  <footer  class="container-fluid footer" id="Contact">
+    <span class="col-md-3" ><h4>Contact Us:</h4></span>
+    <br>
+    <span class="col-md-3" style="color: gray;">General Enquiries:</span>
+    <span class="col-md-3">(+91) 1234567890</span>
+    <span class="col-md-3">(+91) 1234567890</span>
+    <br>
+    <br>
+    <span class="col-md-3" style="color: gray;">Or email us at:</span>
+    <span class="col-md-3">support@bank.com</span>
+    <span class="col-md-3">help@bank.com</span>
+    <br>
+    <br>
+    <span class="col-md-3" style="color: gray;">Find us on:</span>
+    <a href="https://www.facebook.com/login/" class="fa fa-facebook"></a>
+    <a href="https://twitter.com/login?lang=en" class="fa fa-twitter"></a>
+    <br>
+    <br>
+</footer>    
+
+
+<script>
+    function showCard1() {
+      var x = document.getElementById("Card1");
+      var y = document.getElementById("Card2");
+      var t1 = document.getElementById("Table1");
+      var t2 = document.getElementById("Table2");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+        y.style.display = "none";
+        t1.style.display = "block";
+        t2.style.display = "none";
+      } else {
+        x.style.display = "none";
+        t1.style.display = "none";
+      }
+    }
+    </script>
+   
+   
+   <script>
+     function showCard2() {
+      var x = document.getElementById("Card2");
+      var y = document.getElementById("Card1");
+      var t1 = document.getElementById("Table2");
+      var t2 = document.getElementById("Table1");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+        y.style.display = "none";
+        t1.style.display = "block";
+        t2.style.display = "none";
+      } else {
+        x.style.display = "none";
+        t1.style.display = "none";
+      }
+    }
+      </script>
+
+  </body>
+  </html>
