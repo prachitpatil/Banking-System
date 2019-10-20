@@ -9,18 +9,98 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <title>Payment</title>
+    <title>Business>Checking</title>
+
+    <style>
+    
+    body
+{
+    background: no-repeat;
+    font-family: Arial;
+    color:cornflowerblue
+}
+
+.dropdown-item:hover
+{
+    background-color: lightgray;
+}
+
+/*Footer*/
+
+#Contact{
+    margin-top: 10%;
+}
+footer h4{
+    color: white;
+    padding: 1% 1% 1% 1%;
+}
+
+#Contact{
+    background-color: rgb(40, 44, 58);
+}
+  
+  @media screen and (min-width: 720px) {
+    .fa {
+        padding: 1%;
+      font-size: 5%;
+      width: 4%;
+      text-align: center;
+      text-decoration: none;
+      /*border-radius: 50%;*/
+      }
+      
+      /* Add a hover effect if you want */
+      .fa:hover {
+        opacity: 0.7;
+      }
+      
+      /* Set a specific color for each brand */
+      
+      /* Facebook */
+      .fa-facebook {
+        background: #3B5998;
+        color: white;
+      }
+      
+      /* Twitter */
+      .fa-twitter {
+        background: #55ACEE;
+        color: white;
+      }
+  }
+
+  /*Footer-End*/
+
+  #Questions{
+    color:white;
+    background-color: rgba(255, 255, 255, 0.397);
+    width:40%;
+  }
+
+  .jumbotron p{
+    padding-left: 5%;
+  }
+
+  .jumbotron h5{
+    padding-left: 3%;
+  }
+
+  @media screen and (max-width: 800px) {
+    #Questions{
+      display: none;
+    }
+  }
+    
+    </style>
+
   </head>
   <body>
-    <link href='Payment_style.css' rel='stylesheet'>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
 
     <!--Navbar--> 
   <header> 
@@ -38,31 +118,23 @@
           Personal
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
+          <a class="dropdown-item" href="#">Prepaid</a>
+          <a class="dropdown-item" href="#">Savings</a>
+          <a class="dropdown-item" href="#">Health Savings</a>
         </div>
       </li>
+
         <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Business
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Accounts</a>
-          <a class="dropdown-item" href="#">Tools</a>
-          <a class="dropdown-item" href="#">Online</a>
+          <a class="dropdown-item" href="#">Checking</a>
+          <a class="dropdown-item" href="#">Cash Management</a>
+          <a class="dropdown-item" href="#">Money Market</a>
         </div>
       </li>
-        <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Invest
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Business Services</a>
-          <a class="dropdown-item" href="#">Banking Services</a>
-          <a class="dropdown-item" href="#">Business Centres</a>
-        </div>
-        </li>
+       
         <li class="nav-item active">
           <a class="nav-link" href="#Services">Services</a>
         </li>
@@ -76,74 +148,50 @@
     </ul>
   
     <form class="form-inline my-2 my-lg-0">
-      <a href="#" class="btn btn-outline-danger my-2 my-sm-0" type="submit">Logout</a>
+      <a href="Login.html" class="btn btn-outline-success my-2 my-sm-0" type="submit">Login</a>
     </form>
   </div>
 </nav>
   </header>
 
-
 <br/>
 
-<!--Seletion Buttons-->
-
-<div style="padding: 0% 0% 0% 1%;" class="btn-group">
-        <h5 style="margin-top: 2%;">Select Account :</h5>
-        <p style="color: rgba(0,0,0,0);">.</p>
-    <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Account
-    </button>
-    <div class="dropdown-menu">
-      <a class="dropdown-item" href="#">Account 1</a>
-      <a class="dropdown-item" href="#">Account 2</a>
-    </div>
-  </div>
-
-  <br/>
-  <br/>
-
-  <div style="padding: 0% 0% 0% 1%;" class="btn-group">
-    <h5 style="margin-top: 2%;">Pay To :</h5>
-    <p style="color: rgba(0,0,0,0);">.</p>
-        <div class="form-group">
-           <input type="text" class="form-control" id="Receiver">       
-        </div>
+<div class="col-xs-12" style="padding: 2%;">
+  <h1>Checking</h1>
+  <p style="color: black;">The NVB Care-free prepaid card account offers the simplicity of a prepaid card with the benefits of a banking relationship. There is no activation fee or balance requirements—and there are no overdraft fees. It really is a care-free solution.</p>
 </div>
 
 <br/>
-<br/>
 
-
-<div style="padding: 0% 0% 0% 1%;" class="btn-group">
-    <h5 style="margin-top: 2%;">Amount :</h5>
-    <p style="color: rgba(0,0,0,0);">.</p>
-        <div class="form-group">
-           <input type="text" class="form-control" id="Amount">       
-        </div>
+<div class="col-xs-12" style="padding: 2%;">
+    <h1>Advantages</h1>
+    <ul style="color: black;">
+        <li>No overdraft fees</li>
+        <li>Online Statements</li>
+        <li>Online and Mobile Access</li>
+        <li>Online Bill Pay</li>
+        <li>FDIC Insured</li>
+    </ul>
 </div>
 
 <br/>
+
+<div class="col-xs-12" style="padding: 2%;">
+    <h1>Use It</h1>
+    <ul style="color: black;">
+        <li>Make Purchases Online</li>
+        <li>Get cash back at any ATM</li>
+        <li>Schedule Online Payment</li>
+        <li>FDIC Insured</li>
+    </ul>
+</div>
+
 <br/>
 
-
-  <div style="padding: 0% 0% 0% 1%;" class="btn-group">
-    <h5 style="margin-top: 2%;">Password :</h5>
-    <p style="color: rgba(0,0,0,0);">.</p>
-    <div class="form-group">
-        <input type="password" class="form-control" value="Password" id="pswd">       
-     </div>
-    <br/>   
-
-</div>
-<input type="checkbox" onclick="togglePassword()">Show Password
-
-    <br/>
-    <br/>
-
-
-    <button type="button" class="btn btn-warning" style="margin-left: 2%;">Pay</button>
-
-
+<div class="col-xs-12" style="padding: 2%;">
+        <h1>What You Need to Know</h1>
+        <p style="color: black;">Minors age 12 to 17 may have a Care-free card account with an adult co-owner. Open with $5. Paper statements are available for a Rs.100 monthly fee. A Rs.5000 monthly service charge will apply after 90 consecutive days of inactivity.</p>
+      </div>
   <!--Footer-->    
   <footer  class="container-fluid footer" id="Contact">
     <span class="col-md-3" ><h4>Contact Us:</h4></span>
@@ -166,18 +214,5 @@
 </footer>    
 
 
-<script>
-function togglePassword() {
-  var x = document.getElementById("pswd");
-  if (x.type === "password") {
-    x.type = "text";
-  } else {
-    x.type = "password";
-  }
-}
-
-</script>
-
-
-  </body>
-  </html>
+</body>
+</html>
