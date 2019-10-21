@@ -103,10 +103,12 @@
 <br/>
 -->
 
-<nav class="navbar navbar-expand-lg" style="background-color: white; /* For browsers that do not support gradients */
-background-image: linear-gradient(to bottom right, rgb(0, 132, 255), rgba(0, 0, 0, 0.781)); /* Standard syntax (must be last) */">
-  <h3 class="navbar-brand" style="font-size: 150%; color: white;">My Accounts :</h3>
-  <h3 class="navbar-brand" style="font-size: 150%; color: white;">3</h3>
+<nav class="navbar navbar-expand-sm" style="background-color: rgb(35, 50, 77); /* For browsers that do not support gradients */
+background-image: linear-gradient(to bottom right, rgb(36, 134, 247), rgb(38, 50, 66)); /* Standard syntax (must be last) */">
+  <h3 style="font-size: 150%; color: white;">My Accounts: </h3><br/>
+  <h3 style="font-size: 150%; color: rgba(255, 255, 255, 0);">.</h3><br/>
+  <h3 style="font-size: 150%; color: white;">3</h3><br/>
+  <h3 style="font-size: 150%; color: rgba(255, 255, 255, 0);">.....</h3><br/>
   <form class="form-inline my-2 my-lg-0">
     <a href="AccInfo.html" class="btn btn-outline-success my-2 my-sm-0" type="submit">View</a>
   </form>
@@ -123,9 +125,9 @@ background-image: linear-gradient(to bottom right, rgb(0, 132, 255), rgba(0, 0, 
   
     <div class="row">
   
-        <div class="col-md-3">  
-          <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
-            <div class="card-header" style="text-align: center;">Total Balance:</div>
+        <div class="col-md-3 col-xs-6">  
+          <div class="card text-white bg-primary mb-3">
+            <div class="card-header" style="text-align: center;">Balance:</div>
             <div class="card-body">
               <h5 class="card-title" style="text-align: center;">12345678</h5>
             </div>
@@ -133,9 +135,9 @@ background-image: linear-gradient(to bottom right, rgb(0, 132, 255), rgba(0, 0, 
             <div class="col-xs"><br></div>
           </div>
   
-          <div class="col-md-3">  
-            <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
-              <div class="card-header" style="text-align: center;">Recent Transaction:</div>
+          <div class="col-md-3 col-xs-6">  
+            <div class="card text-white bg-success mb-3">
+              <div class="card-header" style="text-align: center;">Transaction:</div>
               <div class="card-body">
                 <h5 class="card-title" style="text-align: center;">+5000</h5>
               </div>
@@ -143,18 +145,18 @@ background-image: linear-gradient(to bottom right, rgb(0, 132, 255), rgba(0, 0, 
           <div class="col-xs"><br></div>
         </div>
   
-        <div class="col-md-3">  
-          <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+        <div class="col-md-3 col-xs-6">  
+          <div class="card text-white bg-danger mb-3">
             <div class="card-header" style="text-align: center;">Maturities:</div>
             <div class="card-body">
-              <h5 class="card-title" style="text-align: center;">2 this month</h5>
+              <h5 class="card-title" style="text-align: center;">2 this year</h5>
             </div>
           </div>
           <div class="col-xs"><br></div>
         </div>
         
-        <div class="col-md-3">
-          <div class="card text-white bg-warning mb-3" style="max-width: 18rem;">
+        <div class="col-md-3 col-xs-6">
+          <div class="card text-white bg-warning mb-3">
             <div class="card-header" style="text-align: center;">EMIs:</div>
             <div class="card-body">
               <h5 class="card-title"  style="text-align: center;">2 Pending</h5>
@@ -235,38 +237,36 @@ background-image: linear-gradient(to bottom right, rgb(0, 132, 255), rgba(0, 0, 
   <div class="row">
 
       <div class="col-md-4">  
-         <div class="card" style="width: 18rem;">
+         <div class="card">
 	  <div class="card-body">
 	    <h5 class="card-title">My Cards</h5>
 	    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-	    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-	    <a href="Card.html" class="card-link">View Cards</a>
+	    <p class="card-text"></p>
+	    <a href="Card.html" class="btn btn-primary">View</a>
 	  </div>
 	</div>
           <div class="col-xs"><br></div>
         </div>
 
         <div class="col-md-4">  
-        <div class="card" style="width: 18rem;">
+        <div class="card">
 	  <div class="card-body">
 	    <h5 class="card-title">My transactions</h5>
 	    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-	    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-	    <a href="Transaction.html" class="card-link">Deposit</a>
-	    <a href="Transaction.html" class="card-link">Withdrawal</a>
+	    <p class="card-text"></p>
+	    <a href="Transaction.html" class="btn btn-primary">View</a>
 	  </div>
 	</div>
         <div class="col-xs"><br></div>
       </div>
 
       <div class="col-md-4">  
-        <div class="card" style="width: 18rem;">
+        <div class="card">
 	  <div class="card-body">
 	    <h5 class="card-title">My EMIs/Loans</h5>
-	    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-	    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-	    <a href="#" class="card-link">New</a>
-	    <a href="#" class="card-link">Ongoing</a>
+	    <h6 class="card-subtitle mb-2 text-muted">Card Subtitle</h6>
+	    <p class="card-text"></p>
+	    <a href="#" class="btn btn-primary">View</a>
 	  </div>
 	</div>
         <div class="col-xs"><br></div>

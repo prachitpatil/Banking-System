@@ -90,12 +90,12 @@
 <div style="padding: 0% 0% 0% 1%;" class="btn-group">
         <h5 style="margin-top: 2%;">Select Account :</h5>
         <p style="color: rgba(0,0,0,0);">.</p>
-    <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <button type="button" id="accountbtn" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       Account
     </button>
     <div class="dropdown-menu">
-      <a class="dropdown-item" href="#">Account 1</a>
-      <a class="dropdown-item" href="#">Account 2</a>
+      <a class="dropdown-item" href="#" onclick="myFunction1()">Account 1</a>
+      <a class="dropdown-item" href="#" onclick="myFunction2()">Account 2</a>
     </div>
   </div>
 
@@ -175,6 +175,17 @@ function togglePassword() {
     x.type = "password";
   }
 }
+
+function myFunction1()
+{
+  document.getElementById("accountbtn").innerHTML="Account 1";
+};
+
+function myFunction2()
+{
+  document.getElementById("accountbtn").innerHTML="Account 2";
+};
+
 
 </script>
 
