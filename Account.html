@@ -110,10 +110,144 @@ background-image: linear-gradient(to bottom right, rgb(36, 134, 247), rgb(38, 50
   <h3 style="font-size: 150%; color: white;">3</h3><br/>
   <h3 style="font-size: 150%; color: rgba(255, 255, 255, 0);">.....</h3><br/>
   <form class="form-inline my-2 my-lg-0">
-    <a href="AccInfo.html" class="btn btn-outline-success my-2 my-sm-0" type="submit">View</a>
+    <a id="AccBtn1" href="#" onclick="showAcc1()" class="btn btn-outline-success my-2 my-sm-0">Account 1</a>
+    <h3 style="font-size: 150%; color: rgba(255, 255, 255, 0);">.</h3><br/>
+    <a id="AccBtn2" href="#" onclick="showAcc2()" class="btn btn-outline-success my-2 my-sm-0">Account 2</a>
+    <h3 style="font-size: 150%; color: rgba(255, 255, 255, 0);">.</h3><br/>
+    <a id="AccBtn3" href="#" onclick="showAcc3()" class="btn btn-outline-success my-2 my-sm-0">Account 3</a>
   </form>
 </nav>
 
+
+<!--Info Table-->
+
+<div id="Table1" class="container-fluid" style="background-color: white; display: none;">
+    <table class="table table-bordered table-hover table-responsive-xs">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Account ID</th>
+          <th scope="col">Type</th>
+          <th scope="col">Balance</th>
+          <th scope="col">Home Branch</th>
+          <th scope="col">Created On</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>1234</td>
+          <td>Savings</td>
+          <td>5736482</td>
+          <td>Bandra</td>
+          <td>06-10-2019</td>
+        </tr>
+        <tr>
+              <th scope="row">2</th>
+              <td>5678</td>
+              <td>Current</td>
+            <td>74267</td>
+            <td>Bandra</td>
+            <td>21-10-2019</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>95725</td>
+              <td>Savings</td>
+            <td>2575879</td>
+            <td>Bandra</td>
+            <td>12-09-2019</td>
+            </tr>
+      </tbody>
+    </table>
+  </div>
+  
+
+  
+<div id="Table2" class="container-fluid" style="background-color: white; display: none;">
+    <table class="table table-bordered table-hover table-responsive-xs">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Account ID</th>
+          <th scope="col">Type</th>
+          <th scope="col">Balance</th>
+          <th scope="col">Home Branch</th>
+          <th scope="col">Created On</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>537336</td>
+          <td>Savings</td>
+          <td>6786525</td>
+          <td>Bandra</td>
+          <td>06-10-2019</td>
+        </tr>
+        <tr>
+              <th scope="row">2</th>
+              <td>686236</td>
+              <td>Current</td>
+            <td>862786</td>
+            <td>Bandra</td>
+            <td>21-10-2019</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>85253</td>
+              <td>Savings</td>
+            <td>8658286</td>
+            <td>Bandra</td>
+            <td>12-09-2019</td>
+            </tr>
+      </tbody>
+    </table>
+  </div>
+  
+
+  
+<div id="Table3" class="container-fluid" style="background-color: white; display: none;">
+    <table class="table table-bordered table-hover table-responsive-xs">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Account ID</th>
+          <th scope="col">Type</th>
+          <th scope="col">Balance</th>
+          <th scope="col">Home Branch</th>
+          <th scope="col">Created On</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>12345</td>
+          <td>Savings</td>
+          <td>5shshfh</td>
+          <td>Bandra</td>
+          <td>06-10-2019</td>
+        </tr>
+        <tr>
+              <th scope="row">2</th>
+              <td>5657557</td>
+              <td>Current</td>
+            <td>537737</td>
+            <td>Bandra</td>
+            <td>21-10-2019</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>737773</td>
+              <td>Savings</td>
+            <td>957736</td>
+            <td>Bandra</td>
+            <td>12-09-2019</td>
+            </tr>
+      </tbody>
+    </table>
+  </div>
+  
 
 
 <!--Cards 1-->
@@ -302,5 +436,91 @@ background-image: linear-gradient(to bottom right, rgb(36, 134, 247), rgb(38, 50
 </footer>    
 
 
+<script>
+function showAcc1() {
+      //var a=0;
+      var x = document.getElementById("AccBtn1");
+      var y = document.getElementById("AccBtn2");
+      var z = document.getElementById("AccBtn3");
+      var t1 = document.getElementById("Table1");
+      var t2 = document.getElementById("Table2");
+      var t3 = document.getElementById("Table3");
+      x.classList.remove('btn btn-outline-success my-2 my-sm-0');
+      y.classList.remove('btn btn-outline-success my-2 my-sm-0');
+      z.classList.remove('btn btn-outline-success my-2 my-sm-0');
+      x.classList.add('btn btn-warning my-2 my-sm-0');
+      //if(a==0){
+        t1.style.display = "block";
+        t2.style.display = "none";
+        t3.style.display = "none";
+        //a=1;
+      //}
+      //else{
+        
+        //t1.style.display = "none";
+        //x.classList.remove('btn btn-success my-2 my-sm-0');
+        //x.classList.add('btn btn-outline-success my-2 my-sm-0');
+      //}
+      
+    };
+
+
+    function showAcc2(){
+      var a=0;
+      var x = document.getElementById("account1");
+      var y = document.getElementById("account2");
+      var z = document.getElementById("account3");
+      var t1 = document.getElementById("Table1");
+      var t2 = document.getElementById("Table2");
+      var t3 = document.getElementById("Table3");
+      x.classList.remove('btn btn-outline-success my-2 my-sm-0');
+      y.classList.remove('btn btn-outline-success my-2 my-sm-0');
+      z.classList.remove('btn btn-outline-success my-2 my-sm-0');
+      y.classList.add('btn btn-success my-2 my-sm-0');
+      if(a==0){
+        t1.style.display = "none";
+        t2.style.display = "block";
+        t3.style.display = "none";
+        a=1;
+      }
+      else{
+        t2.style.display = "none";
+        y.classList.remove('btn btn-success my-2 my-sm-0');
+        y.classList.add('btn btn-outline-success my-2 my-sm-0');
+      }
+      
+    };
+
+    function showAcc3() {
+      var a=0;
+      var x = document.getElementById("account1");
+      var y = document.getElementById("account2");
+      var z = document.getElementById("account3");
+      var t1 = document.getElementById("Table1");
+      var t2 = document.getElementById("Table2");
+      var t3 = document.getElementById("Table3");
+      x.classList.remove('btn btn-outline-success my-2 my-sm-0');
+      y.classList.remove('btn btn-outline-success my-2 my-sm-0');
+      z.classList.remove('btn btn-outline-success my-2 my-sm-0');
+      z.classList.add('btn btn-success my-2 my-sm-0');
+      if(a==0){
+        t1.style.display = "none";
+        t2.style.display = "none";
+        t3.style.display = "block";
+        a=1;
+      }
+      else{
+       
+        t3.style.display = "none";
+        z.classList.remove('btn btn-success my-2 my-sm-0');
+        z.classList.add('btn btn-outline-success my-2 my-sm-0');
+      }
+      
+    };
+</script>
+
+
 </body>
+
+
 </html>
