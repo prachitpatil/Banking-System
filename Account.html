@@ -13,6 +13,7 @@
   </head>
   <body>
     <link href='Account_style.css' rel='stylesheet'>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -428,89 +429,62 @@ background-image: linear-gradient(to bottom right, rgb(36, 134, 247), rgb(38, 50
     <br>
 </footer>    
 
-
 <script>
-function showAcc1() {
-      //var a=0;
-      var x = document.getElementById("AccBtn1");
-      var y = document.getElementById("AccBtn2");
-      var z = document.getElementById("AccBtn3");
-      var t1 = document.getElementById("Table1");
-      var t2 = document.getElementById("Table2");
-      var t3 = document.getElementById("Table3");
-      x.classList.remove('btn btn-outline-success my-2 my-sm-0');
-      y.classList.remove('btn btn-outline-success my-2 my-sm-0');
-      z.classList.remove('btn btn-outline-success my-2 my-sm-0');
-      x.classList.add('btn btn-warning my-2 my-sm-0');
-      //if(a==0){
-        t1.style.display = "block";
-        t2.style.display = "none";
-        t3.style.display = "none";
-        //a=1;
-      //}
-      //else{
-        
-        //t1.style.display = "none";
-        //x.classList.remove('btn btn-success my-2 my-sm-0');
-        //x.classList.add('btn btn-outline-success my-2 my-sm-0');
-      //}
-      
-    };
+$(document).ready(function(){
+  var x1=0;
+  var x2=0;
+  var x3=0;
+  $("#AccBtn1").click(function(){
+    if(x1==0){
+    $("#AccBtn2, #AccBtn3 ").attr('class', 'btn btn-outline-success my-2 my-sm-0');
+    $("#AccBtn1 ").attr('class', 'btn btn-warning my-2 my-sm-0');
+    $("#Table1").show();
+    $("#Table2").hide();
+    $("#Table3").hide();
+    x1=1
+  }
+  else{
+    $("#AccBtn1, #AccBtn2, #AccBtn3 ").attr('class', 'btn btn-outline-success my-2 my-sm-0');
+    $("#Table1,#Table2,#Table3").hide();
+    x1=0;
+  }
+  });
 
+  $("#AccBtn2").click(function(){
+    if(x2==0){
+    $("#AccBtn1, #AccBtn3 ").attr('class', 'btn btn-outline-success my-2 my-sm-0');
+    $("#AccBtn2 ").attr('class', 'btn btn-warning my-2 my-sm-0');
+    $("#Table2").show();
+    $("#Table1").hide();
+    $("#Table3").hide();
+    x2=1
+  }
+  else{
+    $("#AccBtn1, #AccBtn2, #AccBtn3 ").attr('class', 'btn btn-outline-success my-2 my-sm-0');
+    $("#Table1,#Table2,#Table3").hide();
+    x2=0;
+  }
+  });
 
-    function showAcc2(){
-      var a=0;
-      var x = document.getElementById("account1");
-      var y = document.getElementById("account2");
-      var z = document.getElementById("account3");
-      var t1 = document.getElementById("Table1");
-      var t2 = document.getElementById("Table2");
-      var t3 = document.getElementById("Table3");
-      x.classList.remove('btn btn-outline-success my-2 my-sm-0');
-      y.classList.remove('btn btn-outline-success my-2 my-sm-0');
-      z.classList.remove('btn btn-outline-success my-2 my-sm-0');
-      y.classList.add('btn btn-success my-2 my-sm-0');
-      if(a==0){
-        t1.style.display = "none";
-        t2.style.display = "block";
-        t3.style.display = "none";
-        a=1;
-      }
-      else{
-        t2.style.display = "none";
-        y.classList.remove('btn btn-success my-2 my-sm-0');
-        y.classList.add('btn btn-outline-success my-2 my-sm-0');
-      }
-      
-    };
+  $("#AccBtn3").click(function(){
+    if(x3==0){
+    $("#AccBtn2, #AccBtn1 ").attr('class', 'btn btn-outline-success my-2 my-sm-0');
+    $("#AccBtn3 ").attr('class', 'btn btn-warning my-2 my-sm-0');
+    $("#Table3").show();
+    $("#Table2").hide();
+    $("#Table1").hide();
+    x3=1
+  }
+  else{
+    $("#AccBtn1, #AccBtn2, #AccBtn3 ").attr('class', 'btn btn-outline-success my-2 my-sm-0');
+    $("#Table1,#Table2,#Table3").hide();
+    x3=0;
+  }
+  });
+});
 
-    function showAcc3() {
-      var a=0;
-      var x = document.getElementById("account1");
-      var y = document.getElementById("account2");
-      var z = document.getElementById("account3");
-      var t1 = document.getElementById("Table1");
-      var t2 = document.getElementById("Table2");
-      var t3 = document.getElementById("Table3");
-      x.classList.remove('btn btn-outline-success my-2 my-sm-0');
-      y.classList.remove('btn btn-outline-success my-2 my-sm-0');
-      z.classList.remove('btn btn-outline-success my-2 my-sm-0');
-      z.classList.add('btn btn-success my-2 my-sm-0');
-      if(a==0){
-        t1.style.display = "none";
-        t2.style.display = "none";
-        t3.style.display = "block";
-        a=1;
-      }
-      else{
-       
-        t3.style.display = "none";
-        z.classList.remove('btn btn-success my-2 my-sm-0');
-        z.classList.add('btn btn-outline-success my-2 my-sm-0');
-      }
-      
-    };
 </script>
+
 
 
 </body>

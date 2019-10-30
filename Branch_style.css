@@ -54,4 +54,8 @@ footer h4{
       }
   }
 
+  hr.new1 {
+    border-top: 1px solid gray;
+  }
+
   /*Footer-End*/
